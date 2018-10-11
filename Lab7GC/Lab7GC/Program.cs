@@ -89,7 +89,7 @@ namespace Lab7GC
         }
         private static void CheckHTML(string html)
         {
-            if (Regex.IsMatch(html, @"^<\w{1,}>.{1,}<\w{1,}>$"))
+            if (Regex.IsMatch(html, @"^<\w{1,}>.{1,}<\/\w{1,}>$"))
             {
                 Console.WriteLine("Valid HTML code, thank you! \n");
             }
